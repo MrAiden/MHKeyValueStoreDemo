@@ -13,9 +13,12 @@
 		4C5CC80421AB85E6006B0394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5CC80321AB85E6006B0394 /* Assets.xcassets */; };
 		4C5CC80721AB85E6006B0394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5CC80521AB85E6006B0394 /* LaunchScreen.storyboard */; };
 		4C5CC80A21AB85E6006B0394 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5CC80921AB85E6006B0394 /* main.m */; };
+		4C5CC81321AB9232006B0394 /* MHKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5CC81221AB9232006B0394 /* MHKeyValueStore.m */; };
+		F276199F4450D6EA793168A4 /* libPods-MHKeyValueStoreDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D907502A1E59B5F0704DF12 /* libPods-MHKeyValueStoreDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D907502A1E59B5F0704DF12 /* libPods-MHKeyValueStoreDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MHKeyValueStoreDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5CC7F721AB85E4006B0394 /* MHKeyValueStoreDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHKeyValueStoreDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5CC7FA21AB85E4006B0394 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C5CC7FB21AB85E4006B0394 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,10 @@
 		4C5CC80621AB85E6006B0394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C5CC80821AB85E6006B0394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5CC80921AB85E6006B0394 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C5CC81121AB9232006B0394 /* MHKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHKeyValueStore.h; sourceTree = "<group>"; };
+		4C5CC81221AB9232006B0394 /* MHKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHKeyValueStore.m; sourceTree = "<group>"; };
+		6DB2349281E37CBC2FBB36E1 /* Pods-MHKeyValueStoreDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHKeyValueStoreDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHKeyValueStoreDemo/Pods-MHKeyValueStoreDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D807CE119A7641A4580BD623 /* Pods-MHKeyValueStoreDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHKeyValueStoreDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHKeyValueStoreDemo/Pods-MHKeyValueStoreDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F276199F4450D6EA793168A4 /* libPods-MHKeyValueStoreDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +50,11 @@
 		4C5CC7EE21AB85E4006B0394 = {
 			isa = PBXGroup;
 			children = (
+				4C5CC81021AB9232006B0394 /* MHKeyValueStore */,
 				4C5CC7F921AB85E4006B0394 /* MHKeyValueStoreDemo */,
 				4C5CC7F821AB85E4006B0394 /* Products */,
+				DA115C25DD7F0B703DF1FFF2 /* Pods */,
+				EA149D5760DE5A006DF705B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +82,33 @@
 			path = MHKeyValueStoreDemo;
 			sourceTree = "<group>";
 		};
+		4C5CC81021AB9232006B0394 /* MHKeyValueStore */ = {
+			isa = PBXGroup;
+			children = (
+				4C5CC81121AB9232006B0394 /* MHKeyValueStore.h */,
+				4C5CC81221AB9232006B0394 /* MHKeyValueStore.m */,
+			);
+			name = MHKeyValueStore;
+			path = ../MHKeyValueStore;
+			sourceTree = "<group>";
+		};
+		DA115C25DD7F0B703DF1FFF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DB2349281E37CBC2FBB36E1 /* Pods-MHKeyValueStoreDemo.debug.xcconfig */,
+				D807CE119A7641A4580BD623 /* Pods-MHKeyValueStoreDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA149D5760DE5A006DF705B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D907502A1E59B5F0704DF12 /* libPods-MHKeyValueStoreDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +116,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C5CC80D21AB85E6006B0394 /* Build configuration list for PBXNativeTarget "MHKeyValueStoreDemo" */;
 			buildPhases = (
+				40EEFE9573E85D53DF8C8947 /* [CP] Check Pods Manifest.lock */,
 				4C5CC7F321AB85E4006B0394 /* Sources */,
 				4C5CC7F421AB85E4006B0394 /* Frameworks */,
 				4C5CC7F521AB85E4006B0394 /* Resources */,
@@ -136,11 +175,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40EEFE9573E85D53DF8C8947 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHKeyValueStoreDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4C5CC7F321AB85E4006B0394 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5CC81321AB9232006B0394 /* MHKeyValueStore.m in Sources */,
 				4C5CC7FF21AB85E4006B0394 /* ViewController.m in Sources */,
 				4C5CC80A21AB85E6006B0394 /* main.m in Sources */,
 				4C5CC7FC21AB85E4006B0394 /* AppDelegate.m in Sources */,
@@ -283,6 +344,7 @@
 		};
 		4C5CC80E21AB85E6006B0394 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB2349281E37CBC2FBB36E1 /* Pods-MHKeyValueStoreDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +363,7 @@
 		};
 		4C5CC80F21AB85E6006B0394 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D807CE119A7641A4580BD623 /* Pods-MHKeyValueStoreDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

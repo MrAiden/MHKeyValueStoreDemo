@@ -300,7 +300,7 @@ static NSString * const kMHDropTableSQL = @"DROP TABLE '%@'";
     [_dbQueue inDatabase:^(FMDatabase *db) {
         FMResultSet * rs = [db executeQuery:countSQL];
         if ([rs next]) {
-            count = [rs unsignedLongLongIntForColumn:@"num"];
+            count = (NSUInteger)[rs unsignedLongLongIntForColumn:@"num"];
         }
         [rs close];
     }];
