@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MHKeyValueStore.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    MHKeyValueStore *store = [[MHKeyValueStore alloc] initDBWithName:@"testDatabase.sqlite"];
+    [store createTableWithName:@"testTable"];
+    NSDictionary *dict = @{@"name": @"Mortar", @"age": @(12)};
+    NSString *key = @"key";
+    NSString *tableName = @"testTable";
+    [store setObject:dict forKey:key intoTable:tableName];
+    NSLog(@"%@", [store objectForKey:key fromTable:tableName]);
 }
 
 
