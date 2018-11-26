@@ -8,5 +8,6 @@ target 'MHKeyValueStoreDemo' do
 
   # Pods for MHKeyValueStoreDemo
   pod 'FMDB', '~> 2.7.5'
+  #pod 'MHKeyValueStore'
 
 end
